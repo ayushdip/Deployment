@@ -56,7 +56,7 @@ function drawStar(cx,cy,spikes,outerRadius,innerRadius){
 let redcoins = {
     deckcoins : [[30,30],[30,120],[120,30],[120,120]],
     home : [[173,190],[173,205],[173,220],[173,235]],
-    positions : [56,56,56,56],
+    positions : [-6,-6,-6,-6],
     posOnscreen : [[30,180],
     [60,180],
     [90,180],
@@ -130,7 +130,7 @@ let redcoins = {
 let bluecoins = {
   deckcoins : [[300,300],[300,390],[390,300],[390,390]],
   home : [[247,190],[247,205],[247,220],[247,235]],
-  positions : [56,56,56,56],
+  positions : [-6,-6,-6,-6],
   posOnscreen : [[390,240],
   [360,240],
   [330,240],
@@ -529,7 +529,7 @@ setInterval(() => {
     }
 }, 0);
 let number = 0;
-let completed = [4,0,4,0];
+let completed = [0,0,0,0];
 
 function getMousePosition(event,number){ 
   let rect = canvas.getBoundingClientRect();
